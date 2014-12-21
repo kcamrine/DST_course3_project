@@ -1,5 +1,9 @@
 # This is a description of the tidy dataset run_analysis_output_tidy.txt
 
+From the initial study (website: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones# ):
+"The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz."
+
+
 All data is summarized (mean and standard deviation (std)) over multiple measurements split into windows of 2.56 seconds with 50% overlap of other windows. We then take the average for each individual over all of the means and standard deviations to summarize all timeframes. 
 
 ## Data Description (in order of column appearance):
