@@ -1,9 +1,11 @@
 # This is a description of the tidy dataset run_analysis_output_tidy.txt
-# describing the subject information (column 1), the activity information (column 2) and the computations in the following columns. 
 
-Data Description (in order of column appearance):
+All data is summarized (mean and standard deviation (std)) over multiple measurements split into windows of 2.56 seconds with 50% overlap of other windows. We then take the mean of these means and standard deviations for each individual over all of the means and standard deviations to summarize all timeframes. 
+
+## Data Description (in order of column appearance):
 
 "subject"                     the subject identifier, ranging from subject 1 to subject 30.
+"activity"		      the activity any subject was engaging in for the averages computed
 
 ### for the following variables, we have the body and gravity acceleration which were calculated at a constant rate of 50 hz, averaged over time window means. 
 "tBodyAcc-mean()-X"	      
