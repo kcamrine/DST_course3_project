@@ -7,8 +7,11 @@ A description of the processing of data from the following study
 
 ## files include:
 README.md                    -- this file
+
 Run_analysis.R               -- code to tidy the dataset into final product
+
 Codebook.md                  -- description of data processing and variable names
+
 run_analysis_output_tidy.txt -- tidy dataset
 
 
