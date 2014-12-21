@@ -1,13 +1,13 @@
 # This is a description of the tidy dataset run_analysis_output_tidy.txt
 
-All data is summarized (mean and standard deviation (std)) over multiple measurements split into windows of 2.56 seconds with 50% overlap of other windows. We then take the mean of these means and standard deviations for each individual over all of the means and standard deviations to summarize all timeframes. 
+All data is summarized (mean and standard deviation (std)) over multiple measurements split into windows of 2.56 seconds with 50% overlap of other windows. We then take the average for each individual over all of the means and standard deviations to summarize all timeframes. 
 
 ## Data Description (in order of column appearance):
 
 "subject"                     the subject identifier, ranging from subject 1 to subject 30.
 "activity"		      the activity any subject was engaging in for the averages computed
 
-### for the following variables, we have the body and gravity acceleration which were calculated at a constant rate of 50 hz, averaged over time window means. 
+### for the following variables, we have the body and gravity acceleration which were calculated at a constant rate of 50 hz, averaged over timeframe means. 
 "tBodyAcc-mean()-X"	      
 "tBodyAcc-mean()-Y"
 "tBodyAcc-mean()-Z"
@@ -15,7 +15,7 @@ All data is summarized (mean and standard deviation (std)) over multiple measure
 "tGravityAcc-mean()-Y"
 "tGravityAcc-mean()-Z"
 
-### for the following variables, body linear acceleration and angular velocity allowed for computation of the acceleration jerk averaged over time
+### for the following variables, body linear acceleration and angular velocity allowed for computation of the acceleration jerk averaged over timeframe means
 "tBodyAccJerk-mean()-X"
 "tBodyAccJerk-mean()-Y"
 "tBodyAccJerk-mean()-Z"
@@ -26,14 +26,14 @@ All data is summarized (mean and standard deviation (std)) over multiple measure
 "tBodyGyroJerk-mean()-Y"
 "tBodyGyroJerk-mean()-Z"
 
-### the euclidian norm  (denoted as "mag") was added to these varaibles, and then the mean was calculated over all time window means
+### the euclidian norm  (denoted as "mag") was added to these varaibles, and then the mean was calculated over all timeframe means
 "tBodyAccMag-mean()"
 "tGravityAccMag-mean()"
 "tBodyAccJerkMag-mean()"
 "tBodyGyroMag-mean()"
 "tBodyGyroJerkMag-mean()"
 
-### the following variables are means of the fourier transformations of previously described variables over time windows (denoted by the "f" at the beginning of the variable)
+### the following variables are means of the fourier transformations of previously described variables over timeframe means (denoted by the "f" at the beginning of the variable)
 "fBodyAcc-mean()-X"
 "fBodyAcc-mean()-Y"
 "fBodyAcc-mean()-Z"
