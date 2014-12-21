@@ -5,7 +5,7 @@ Data Description (in order of column appearance):
 
 "subject"                     the subject identifier, ranging from subject 1 to subject 30.
 
-# for the following variables, we have the body and gravity acceleration which were calculated at a constant rate of 50 hz, averaged over time. 
+### for the following variables, we have the body and gravity acceleration which were calculated at a constant rate of 50 hz, averaged over time window means. 
 "tBodyAcc-mean()-X"	      
 "tBodyAcc-mean()-Y"
 "tBodyAcc-mean()-Z"
@@ -13,7 +13,7 @@ Data Description (in order of column appearance):
 "tGravityAcc-mean()-Y"
 "tGravityAcc-mean()-Z"
 
-# for the following variables, body linear acceleration and angular velocity allowed for computation of the acceleration jerk averaged over time
+### for the following variables, body linear acceleration and angular velocity allowed for computation of the acceleration jerk averaged over time
 "tBodyAccJerk-mean()-X"
 "tBodyAccJerk-mean()-Y"
 "tBodyAccJerk-mean()-Z"
@@ -24,14 +24,14 @@ Data Description (in order of column appearance):
 "tBodyGyroJerk-mean()-Y"
 "tBodyGyroJerk-mean()-Z"
 
-# the euclidian norm  (denoted as "mag") was added to these varaibles, and then the mean was calculated over time
+### the euclidian norm  (denoted as "mag") was added to these varaibles, and then the mean was calculated over all time window means
 "tBodyAccMag-mean()"
 "tGravityAccMag-mean()"
 "tBodyAccJerkMag-mean()"
 "tBodyGyroMag-mean()"
 "tBodyGyroJerkMag-mean()"
 
-# the following variables are means of the fourier transformations of previously described variables (denoted by the "f" at the beginning of the variable)
+### the following variables are means of the fourier transformations of previously described variables over time windows (denoted by the "f" at the beginning of the variable)
 "fBodyAcc-mean()-X"
 "fBodyAcc-mean()-Y"
 "fBodyAcc-mean()-Z"
@@ -47,7 +47,7 @@ Data Description (in order of column appearance):
 "fBodyBodyGyroJerkMag-mean()"
 
 
-# the following variables are averages of standard deviations of previously described variables 
+### the following variables are averages of standard deviations over time windows of previously described variables 
 "tBodyAcc-std()-X"
 "tBodyAcc-std()-Y"
 "tBodyAcc-std()-Z"
