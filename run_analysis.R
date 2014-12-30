@@ -19,7 +19,7 @@ colnames(total_x) <- c(as.character(read.table("UCI HAR Dataset/features.txt")[,
 # Extracts only the measurements on the mean and standard deviation for each measurement. 
 total_x_mean <- grep(colnames(total_x),pattern="mean()",fixed=TRUE)
 total_x_std <- grep(colnames(total_x),pattern="std()",fixed=TRUE)
-total_x_subset <- total_x[c(total_x_mean,total_x_std)]
+total_x_subset <- total_x[,c(total_x_mean,total_x_std)]
 total_x_subset <- cbind(subject=expids,activity=activ,total_x_subset)
 
 # Uses descriptive activity names to name the activities in the data set
